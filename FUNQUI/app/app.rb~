@@ -7,7 +7,7 @@ module Projecto
 
     sprockets :minify => (Padrino.env == :production)
 
-    enable :sessions
+
 
 	
     ##

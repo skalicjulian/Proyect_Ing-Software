@@ -1,6 +1,6 @@
 <div class="jumbotron">
   <h1>Nuevo torneo</h1>
-<% form_for(@torneo, '/home/create') do |f| %> 
+<% form_for(:torneo, '/home/create') do |f| %> 
 	<%= f.label :nombre %>
 	<%= f.text_field :nombre %>
 	<%= f.label :fecha %>

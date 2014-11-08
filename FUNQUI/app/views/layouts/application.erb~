@@ -26,6 +26,6 @@
 
     </div> 
 
-		<%= javascript_include_tag '/assets/application' %> 
+		<%= javascript_include_tag '/assets/bootstrap' %> 
 		</body>
 </html>
