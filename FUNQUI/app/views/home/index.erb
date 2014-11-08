@@ -10,4 +10,28 @@
   <br/>
   <%= f.submit "Crear", :class => "btn btn-primary" %>
 <% end %>
+
+<table class="table table-bordered">
+	<tr>
+		<th>Nombre</th>
+		<th>Fecha</th>
+		<th>Comentario</th>
+	</tr>
+	<% @torneos.each do |torneo| %>
+
+	<tr>
+		<td>
+			<%= torneo.nombre %>
+		</td>
+		<td>
+			<%= torneo.fecha %>
+		</td>
+		<td>
+			<%= torneo.comentario %>
+		</td>			
+	</tr>
+
+  <% end %>
+
+</table>
 </div>

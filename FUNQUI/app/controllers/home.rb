@@ -2,12 +2,14 @@ Projecto::App.controllers :home do
   
   get :index, :map => '/' do  
     @torneo=Torneo.new
+    @torneos = Torneo.all
     render 'home/index'
   end
   
   post :create do
 	@torneo=Torneo.new(params[:torneo])
         @torneo.save
+        @torneos = Torneo.all
 	render 'home/index'
       # @torneo = Torneo.new(params[:torneo])
       # @torneo.save
