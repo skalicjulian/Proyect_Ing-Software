@@ -1,0 +1,45 @@
+{
+  "Cucumber Features": {
+    "coverage": {
+      "/home/julian/Escritorio/Proyectos/Proyect_Ing-Software/FUNQUI/app/controllers/home.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1415509965
+  }
+}

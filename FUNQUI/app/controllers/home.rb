@@ -7,10 +7,12 @@ Projecto::App.controllers :home do
   end
   
   post :create do
-	@torneo=Torneo.new(params[:torneo])
+	   @torneo=Torneo.new(params[:torneo])
         @torneo.save
         @torneos = Torneo.all
-	render 'home/index'
+        flash[:success] = 'Torneo creado'
+	   render 'home/index'
+
       # @torneo = Torneo.new(params[:torneo])
       # @torneo.save
       # password_confirmation = params[:user][:password_confirmation]
