@@ -18,8 +18,13 @@ When(/^Apreto el boton crear$/) do
 	click_button('Crear')
 end
 
-Then(/^Veo el torneo creado en la lista$/) do
+Then(/^Hay un torneo en la lista$/) do
   	@torneos = Torneo.all
   	expect(@torneos.size).to eq(1)
+end
+
+Then(/^Veo un mensaje de "(.*?)"$/) do |content|
+	visit '/'
+  	page.should have_content(content)
 end
 

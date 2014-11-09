@@ -9,4 +9,5 @@ Feature: Pagina de crear torneos
 		And Ingreso la fecha "15/11/2014"
 		And Ingreso un comentario "Gran torneo de futboll 5"
 		And Apreto el boton crear
-		Then Veo el torneo creado en la lista
+		Then Hay un torneo en la lista
+		And Veo un mensaje de "Torneo creado"
