@@ -1,0 +1,21 @@
+require_relative '../features/support/jugador.rb'
+
+describe Jugador do 
+
+	describe 'modelo' do 
+
+		subject { @jugador = Jugador.new}
+
+		it {should respond_to( :nombre)}
+		it {should respond_to( :tablero)}
+		it {should respond_to( :barcos_por_hundir)}
+	end	
+
+	describe 'initialize' do 
+
+		it 'debe iniciar con cantidad de barcos a hundir en 2' do 
+			@jugador = Jugador.new
+			expect(@jugador.barcos_por_hundir).to eq(2)
+		end
+	end
+end
